@@ -1,0 +1,6 @@
+This project includes utility classes, theme and component behavior, compatibility helpers, color palette values, and Material Design icon path data derived from MUI Material UI and @mui/icons-material version 9.5.0.
+
+Source: https://github.com/mui/material-ui/tree/v9.5.0
+License: MIT (see LICENSE).
+
+The icon components were adapted from React JSX to Solid JSX. The palette modules were adapted from JavaScript to TypeScript.

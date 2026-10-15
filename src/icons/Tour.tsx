@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const Tour = /* @__PURE__ */ createSvgIcon(() => <path d="M21 4H7V2H5v20h2v-8h14l-2-5zm-6 5c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2" />, 'Tour');
+
+export default Tour;

@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const WarningAmberTwoTone = /* @__PURE__ */ createSvgIcon(() => <path d="M1 21h22L12 2zm3.47-2L12 5.99 19.53 19zM11 16h2v2h-2zm0-6h2v4h-2z" />, 'WarningAmberTwoTone');
+
+export default WarningAmberTwoTone;

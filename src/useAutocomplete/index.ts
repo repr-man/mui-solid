@@ -1,0 +1,2 @@
+export { useAutocomplete as default, useAutocomplete } from '../inputs';
+export type { AutocompleteChangeDetails, AutocompleteChangeReason, AutocompleteCloseReason, AutocompleteFreeSoloValueMapping, AutocompleteGroupedOption, AutocompleteHighlightChangeReason, AutocompleteInputChangeReason, AutocompleteMappedValue, AutocompleteResolvedValue, AutocompleteValue, AutocompleteValueOrFreeSoloValueMapping, CreateFilterOptionsConfig, FilterOptionsState, UseAutocompleteParameters, UseAutocompleteProps, UseAutocompleteReturnValue } from '../inputs';

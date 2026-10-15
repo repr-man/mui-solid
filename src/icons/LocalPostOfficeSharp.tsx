@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const LocalPostOfficeSharp = /* @__PURE__ */ createSvgIcon(() => <path d="M22 4H2.01v16H22zm-2 4-8 5-8-5V6l8 5 8-5z" />, 'LocalPostOfficeSharp');
+
+export default LocalPostOfficeSharp;

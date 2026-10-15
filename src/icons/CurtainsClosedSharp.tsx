@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const CurtainsClosedSharp = /* @__PURE__ */ createSvgIcon(() => <path d="M20 19V3H4v16H2v2h20v-2zM11 5h2v14h-2z" />, 'CurtainsClosedSharp');
+
+export default CurtainsClosedSharp;

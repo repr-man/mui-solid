@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const Battery4BarRounded = /* @__PURE__ */ createSvgIcon(() => <path d="M17 5v16c0 .55-.45 1-1 1H8c-.55 0-1-.45-1-1V5c0-.55.45-1 1-1h2V3c0-.55.45-1 1-1h2c.55 0 1 .45 1 1v1h2c.55 0 1 .45 1 1m-2 1H9v6h6z" />, 'Battery4BarRounded');
+
+export default Battery4BarRounded;

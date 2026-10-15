@@ -1,0 +1,27 @@
+# API inventory
+
+This inventory compares the MUI Material UI v9.5.0 public barrels with the Solid implementation in this repository. Component entry barrels are generated from upstream default exports and available local exports; matching names do not imply React-compatible prop or ref semantics.
+
+## Implemented entry points
+
+Generated 177 per-entry barrels. The upstream top-level barrel declares 138 default entries; local implementations are available for 138 (0 missing): Accordion, AccordionActions, AccordionDetails, AccordionSummary, Alert, AlertTitle, AppBar, Autocomplete, Avatar, AvatarGroup, Backdrop, Badge, BottomNavigation, BottomNavigationAction, Box, Breadcrumbs, Button, ButtonBase, ButtonGroup, Card, CardActionArea, CardActions, CardContent, CardHeader, CardMedia, Checkbox, Chip, CircularProgress, ClickAwayListener, Collapse, Container, CssBaseline, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Divider, Drawer, Fab, Fade, FilledInput, FormControl, FormControlLabel, FormGroup, FormHelperText, FormLabel, GlobalStyles, Grid, Grow, Icon, IconButton, ImageList, ImageListItem, ImageListItemBar, InitColorSchemeScript, Input, InputAdornment, InputBase, InputLabel, LinearProgress, Link, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemSecondaryAction, ListItemText, ListSubheader, Menu, MenuItem, MenuList, MobileStepper, Modal, NativeSelect, NoSsr, OutlinedInput, Pagination, PaginationItem, Paper, Popover, Popper, Portal, Radio, RadioGroup, Rating, ScopedCssBaseline, Select, Skeleton, Slide, Slider, Snackbar, SnackbarContent, SpeedDial, SpeedDialAction, SpeedDialIcon, Stack, Step, StepButton, StepConnector, StepContent, StepIcon, StepLabel, Stepper, SvgIcon, SwipeableDrawer, Switch, Tab, TabScrollButton, Table, TableBody, TableCell, TableContainer, TableFooter, TableHead, TablePagination, TablePaginationActions, TableRow, TableSortLabel, Tabs, TextField, TextareaAutosize, ToggleButton, ToggleButtonGroup, Toolbar, Tooltip, Typography, Unstable_TrapFocus, Zoom, darkScrollbar, generateUtilityClass, generateUtilityClasses, unstable_composeClasses, useAutocomplete, useMediaQuery, usePagination, useScrollTrigger.
+
+Across the upstream top-level declaration barrel, local named runtime exports cover 470/470 names and local type exports cover 464/1013 names. Missing runtime export examples: none. Missing type examples: AccordionHeadingSlotPropsOverrides, AccordionOwnProps, AccordionOwnerState, AccordionRegionSlotPropsOverrides, AccordionRootSlotPropsOverrides, AccordionSlots, AccordionSlotsAndSlotProps, AccordionSummaryContentSlotPropsOverrides, AccordionSummaryExpandIconWrapperSlotPropsOverrides, AccordionSummaryOwnProps, AccordionSummaryOwnerState, AccordionSummaryRootSlotPropsOverrides, plus 537 more.
+
+Style defaults with local implementations (20): THEME_ID, ThemeProvider, adaptV4Theme, createColorScheme, createStyles, createTheme, enhanceHighContrast, extendTheme, getOverlayAlpha, makeStyles, private_createTypography, private_excludeVariablesFromRoot, responsiveFontSizes, shouldSkipGeneratingVar, styled, unstable_createMuiStrictModeTheme, useTheme, useThemeProps, withStyles, withTheme. Utility defaults with local implementations (19): capitalize, createChainedFunction, createSvgIcon, debounce, deprecatedPropType, getActiveElement, isMuiElement, mergeSlotProps, ownerDocument, ownerWindow, requirePropFactory, setRef, unstable_memoTheme, unstable_useEnhancedEffect, unstable_useId, unsupportedProp, useControlled, useEventCallback, useForkRef.
+
+Per-component barrels expose each implemented entry as default and named exports, plus local types and utility-class exports when available. The source uses Solid-shaped APIs; component behavior, props, slots, refs, and theme integration are not asserted to match MUI. The root entry remains a separate barrel.
+
+Utility-class helpers include `generateUtilityClass`, `generateUtilityClasses`, `unstable_composeClasses`, `unstable_isGlobalState`, `unstable_ClassNameGenerator`, all 118 component maps and their derived `*ClassKey` unions. The internal slot registry includes inherited InputBase slots for Input, FilledInput, and OutlinedInput.
+
+## Remaining upstream API omissions
+
+Runtime exports and type exports are reported separately. These comparisons include the transitive names exposed by the MUI styles and utils declaration barrels:
+
+- `@mui/material/styles` runtime exports: none detected by name.
+- `@mui/material/styles` type exports missing (13): ColorSchemeOverrides, CreateMUIStyled, CssThemeVariables, Interpolation, PropTypes, Shape, ShapeOptions, StorageManager, SupportedColorScheme, ThemeCssVar, ThemeCssVarOverrides, ThemeWithProps, plus 1 more.
+- `@mui/material/utils` runtime exports: none detected by name.
+- `@mui/material/utils` type exports missing (0): none.
+- Top-level default entry modules with no matching implementation: none.
+
+This is a name-based export inventory, not a behavioral conformance report. MUI X, Lab-only package exports, and internals outside these Core declaration barrels are not included. See the upstream [Material UI v9.5.0 entry declarations](https://github.com/mui/material-ui/tree/v9.5.0/packages/mui-material), [styles declarations](https://github.com/mui/material-ui/tree/v9.5.0/packages/mui-material/src/styles), and [utils declarations](https://github.com/mui/material-ui/tree/v9.5.0/packages/mui-material/src/utils).

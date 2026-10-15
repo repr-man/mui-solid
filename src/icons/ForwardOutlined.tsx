@@ -1,0 +1,5 @@
+import { createSvgIcon } from '../display';
+
+const ForwardOutlined = /* @__PURE__ */ createSvgIcon(() => <path d="M14 8.83 17.17 12 14 15.17V14H6v-4h8zM12 4v4H4v8h8v4l8-8z" />, 'ForwardOutlined');
+
+export default ForwardOutlined;
